@@ -4,67 +4,54 @@ import org.junit.jupiter.api.Test;
 
 public class ValidateTest {
     Operations operations = new Operations();
-    //Happy test case for first name
+    // test case for first name
     @Test
-    public void firstNameHappy() {
-        boolean result = operations.validFirstName("Abc");
-        System.out.println(result);
-        Assertions.assertTrue(result);
+    public void firstNameTrue() {
+        try {
+            Assertions.assertTrue(Operations.validFirstName("Abc"));
+            System.out.println("Valid First Name.");
+        }catch (InvalidFirstNameException e){
+            System.out.println("Invalid First Name: " + e);
+        }
     }
-    //Sad test case for First name
+    //test case for Last name
     @Test
-    public void firstNameSad() {
-        boolean result = operations.validFirstName("abc");
-        System.out.println(result);
-        Assertions.assertFalse(result);
+    public void lastNameTrue() {
+        try {
+            Assertions.assertTrue(Operations.validLastName("Xyz"));
+            System.out.println("Valid Last name");
+        }catch (InvalidLastNameException e){
+            System.out.println("Invalid Last Name: " + e);
+        }
     }
-    //Happy True test case for Last name
+    //test case for Email Id
     @Test
-    public void lastNameHappy() {
-        boolean result = operations.validLastName("Xyz");
-        System.out.println(result);
-        Assertions.assertTrue(result);
+    public void emailTrue() {
+        try {
+            Assertions.assertTrue(Operations.validEmailId("zbc112@gmail.com"));
+            System.out.println("Valid Email Address.");
+        }catch (InvalidEmailIdException e){
+            System.out.println("Invalid Email ID: " + e);
+        }
     }
-    //Sad test case for Last name
+    // test case for Mobile number
     @Test
-    public void lastnamesad() {
-        boolean result = operations.validLastName("hdbj");
-        System.out.println(result);
-        Assertions.assertFalse(result);
+    public void mobileNumberTrue() {
+        try {
+            Assertions.assertTrue(Operations.validMobileNumber("91 1234567890"));
+            System.out.println("Valid mobile Number.");
+        }catch (InvalidMobileNumberException e){
+            System.out.println("Invalid Mobile Number: " + e);
+        }
     }
-    // Happy test case for Email Address
+    // test case for Password
     @Test
-    public void emailHappy() {
-        boolean result = operations.validEmailAddress("abc112@gmail.com");
-        //System.out.println(result);
-        Assertions.assertTrue(result);
-    }
-    //Sad test case for Email Address
-    @Test
-    public void emailSad() {
-        boolean result = operations.validEmailAddress("dgg46ex^%$@.gmail.com");
-        //System.out.println(result);
-        Assertions.assertFalse(result);
-    }
-    // Happy test case for Mobile number
-    @Test
-    public void mobileNumberHappy() {
-        boolean result = operations.validMobileNumber("91 1234567890");
-        //System.out.println(result);
-        Assertions.assertTrue(result);
-    }
-    //Sad test case for Mobile Number
-    @Test
-    public void mobileNumberSad() {
-        boolean result = operations.validMobileNumber("91 5326");
-        //System.out.println(result);
-        Assertions.assertFalse(result);
-    }
-    // Happy test case for Password
-    @Test
-    public void validatePassword1() {
-        boolean result = operations.validPassword("gxnsz43465Af%&");
-        //System.out.println(result);
-        Assertions.assertTrue(result);
+    public void passwordTrue()  {
+        try {
+            Assertions.assertTrue(Operations.validPassword("Afhx@$1jhbvb"));
+            System.out.println("Valid Password.");
+        }catch (InvalidPasswordException e){
+            System.out.println("Invalid Password: " + e);
+        }
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.ValidateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-22T10:06:26" hostname="FALGUNI" time="0.095">
+  <properties/>
+  <testcase name="emailTrue()" classname="com.bridgelabz.ValidateTest" time="0.095"/>
+  <system-out><![CDATA[Valid Email Address.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

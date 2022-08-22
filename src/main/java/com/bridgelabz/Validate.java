@@ -2,6 +2,7 @@ package com.bridgelabz;
 import java.util.Scanner;
 public class Validate {
     static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         System.out.println("Welcome to User Registration problems.");
         //creating object for Operation class
@@ -13,8 +14,8 @@ public class Validate {
             choose = sc.nextInt();
             switch (choose) {
                 case 1:
-                    operations.validEmailAddress("abc11@gmail.com");
-                   // System.out.println("email");
+                    //operations.validEmailId("abc11@gmail.com");
+                    System.out.println("email");
                     break;
                 default:
                     System.out.println("Invalid: Enter valid details.");
