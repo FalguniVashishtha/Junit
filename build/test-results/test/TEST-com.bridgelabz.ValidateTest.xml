@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.ValidateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-22T10:06:26" hostname="FALGUNI" time="0.095">
+<testsuite name="com.bridgelabz.ValidateTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-08-24T18:10:14" hostname="FALGUNI" time="0.147">
   <properties/>
-  <testcase name="emailTrue()" classname="com.bridgelabz.ValidateTest" time="0.095"/>
-  <system-out><![CDATA[Valid Email Address.
+  <testcase name="mobileNumberTrue()" classname="com.bridgelabz.ValidateTest" time="0.09"/>
+  <testcase name="firstNameTrue()" classname="com.bridgelabz.ValidateTest" time="0.004"/>
+  <testcase name="lastNameTrue()" classname="com.bridgelabz.ValidateTest" time="0.006"/>
+  <testcase name="passwordTrue()" classname="com.bridgelabz.ValidateTest" time="0.021"/>
+  <testcase name="emailTrue()" classname="com.bridgelabz.ValidateTest" time="0.009"/>
+  <system-out><![CDATA[Mobile number is valid 
+First Name is valid
+Last Name is valid
+Password is valid
+Email Id is valid 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
